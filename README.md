@@ -4,6 +4,8 @@
 
 No static analysis tool (`file`, `linguist`, AST scanners) can detect the language, structure, or content without the encrypted cipher matrix and secret key.
 
+<br />
+
 ## Pypi Installation (soon ...)
 
 ```bash
