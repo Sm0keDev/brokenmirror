@@ -31,7 +31,7 @@ bm --help           # for lazy devs
 1. Shatter & Obfuscate a Repository
 
 ```bash
-brokenmirror obfuscate -s ./my_project -o ./shattered_repo -m ./matrix.enc
+brokenmirror obfuscate -s ./brokenmirror-in -o ./brokenmirror-out -m ./brokenmirror-keys/brokenmirror-in.key
 ```
 
 > Flags:
@@ -43,10 +43,22 @@ brokenmirror obfuscate -s ./my_project -o ./shattered_repo -m ./matrix.enc
 
 <br />
 
+> Sample Output:
+
+```log
+[+] REPOSITORY SHATTERED
+    Processed Files : 1
+    Output Path     : ./brokenmirror-out
+    Matrix Artifact : ./brokenmirror-keys/brokenmirror-in.key
+    Master Secret   : Te6JU79BBRysACRIU8Iy4O2jl+HDwz39IPRWzbU4csE=
+```
+
+<br />
+
 2. Reconstruct & Restore
 
 ```bash
-brokenmirror restore -s ./shattered_repo -o ./restored_project -m ./matrix.enc -k "BASE64_KEY"
+brokenmirror restore -s ./brokenmirror-out -o ./brokenmirror-in -m ./brokenmirror-keys/brokenmirror-in.key -k "Te6JU79BBRysACRIU8Iy4O2jl+HDwz39IPRWzbU4csE="
 ```
 
 > Flags:
@@ -55,6 +67,17 @@ brokenmirror restore -s ./shattered_repo -o ./restored_project -m ./matrix.enc -
 - `-o`, --out: Destination directory for restored source code.
 - `-m`, --matrix: Path to matrix.enc.
 - `-k`, --key: Secret Base64 key provided during obfuscation.
+
+<br >
+
+> Sample Output:
+
+```log
+[+] REPOSITORY RECONSTRUCTED
+    Restored Files  : 1
+    Target Location : ./brokenmirror-in
+```
+
 
 <br >
 
