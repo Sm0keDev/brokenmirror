@@ -4,10 +4,22 @@
 
 No static analysis tool (`file`, `linguist`, AST scanners) can detect the language, structure, or content without the encrypted cipher matrix and secret key.
 
-## Installation
+## Pypi Installation (soon ...)
 
 ```bash
 pip install brokenmirror
+```
+
+<br />
+
+## Local Installation 
+
+```bash
+# create ENV and install deps
+pip install requirements.txt
+pip install -e .
+brokenmirror --help # or the short alias:
+bm --help           # for lazy devs  
 ```
 
 <br />
