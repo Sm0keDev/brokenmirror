@@ -19,7 +19,8 @@ classifiers = [
   "Topic :: Software Development :: Build Tools",
 ]
 dependencies = [
-  "cryptography>=42.0.0"
+  "cryptography>=42.0.0",
+  "fusepy>=3.0.1",
 ]
 
 [project.scripts]
