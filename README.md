@@ -234,9 +234,7 @@ brokenmirror mount-dev \
 
 ## Support 
 
-Github issues tracker or my personal X account:
-
-[Sm0ke](https://x.com/Sm0keDev)
+GitHub [issues](https://github.com/Sm0keDev/brokenmirror/issues) tracker or my personal X account: [Sm0ke](https://x.com/Sm0keDev)
 
 <br />
 
