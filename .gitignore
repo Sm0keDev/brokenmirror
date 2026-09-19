@@ -148,7 +148,6 @@ activemq-data/
 *.sage.py
 
 # Environments
-.env
 .envrc
 .venv
 env/
@@ -220,3 +219,5 @@ __marimo__/
 env/
 env_linux/
 vault.txt 
+config.bat
+node_modules
