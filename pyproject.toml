@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "brokenmirror"
-version = "0.1.0"
+version = "0.0.2"
 authors = [
-  { name = "Developer" }
+  { name = "Sm0ke" }
 ]
 description = "Stealth topological obfuscation and encrypted sharding tool for source code repositories."
 readme = "README.md"
